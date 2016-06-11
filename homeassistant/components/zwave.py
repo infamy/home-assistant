@@ -217,7 +217,7 @@ def setup(hass, config):
     # Setup autoheal
     if autoheal:
         _LOGGER.info("ZWave network autoheal is enabled.")
-        track_time_change(hass, lambda: heal_network(None),
+        track_time_change(hass, lambda now: heal_network(None),
                           hour=0, minute=0, second=0)
 
     options.set_console_output(use_debug)
