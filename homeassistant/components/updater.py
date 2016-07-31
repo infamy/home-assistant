@@ -24,6 +24,7 @@ ENTITY_ID = 'updater.updater'
 ATTR_RELEASE_NOTES = 'release_notes'
 UPDATER_UUID_FILE = ".uuid"
 
+CURRENT_VERSION = "0.24.0"
 
 def _load_uuid(hass, filename=UPDATER_UUID_FILE):
     """Load UUID from a file, if it exist if not create it."""
